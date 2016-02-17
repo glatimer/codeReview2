@@ -1,0 +1,16 @@
+body {
+  background-color: #ab9696;
+}
+
+.jumbotron {
+  position: relative;
+  background: black url("../img/stone-beach.jpg") center center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.col-md-12 h4 {
+  background-color: white;
+}
