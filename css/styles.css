@@ -11,6 +11,6 @@ body {
   overflow: hidden;
 }
 
-.col-md-12 h4 {
-  background-color: white;
+.col-md-12 {
+text-align: center;
 }
