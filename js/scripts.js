@@ -39,16 +39,9 @@ $(document).ready(function() {
         answer = + 0;
       }
 
-    if (question5 === "close" ) {
-      answer = + 1;
-    } else if {
-      answer = + 2;
-      } else {
-        answer = + 0;
-      }
+
 
     //results
-    var destination = ()
-
+  (document).write("<p>"Okay, " + name + "." + " You are planning a trip including you and your " + question3 + "." + " The goal is to " + question1 + " and " + question2 + " in a " + question4 + " but " + question5 + " place" + "." + "Your ideal destination is" + destinationResult + "!"</p>");
   }
 });
