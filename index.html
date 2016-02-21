@@ -16,122 +16,97 @@
     <div class="container">
       <div class="jumbotron">
         <div class="row">
-          <form id="questions">
-            <fieldset>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="goal">What is your goal for this vacation?</label>
-                  <select name="goal" id="goal">
-                    <option disabled selected></option>
-                    <option value="rest">Resting</option>
-                    <option value="active">Staying Active</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="activity">What is your idea of time well spent on vacation?</label>
-                  <select name="activity" id="activity">
-                    <option disabled selected></option>
-                    <option value="eat">Eating and Drinking</option>
-                    <option value="explore">Exploring</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="who">Would you travel with family or with friends?</label>
-                  <select name="who" id="who">
-                    <option disabled selected></option>
-                    <option value="family">Family</option>
-                    <option value="friends">Friends</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="climate">What climate would you preffer on your trip?</label>
-                  <select name="climate" id="climate">
-                    <option disabled selected></option>
-                    <option value="warm">Warmer</option>
-                    <option value="cool">Cooler</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="distance">If traveling from the US would you choose a destination that is near or far?</label>
-                  <select name="distance" id="distance">
-                    <option disabled selected></option>
-                    <option value="close">Close by</option>
-                    <option value="far">Far away</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-12">
+          <div id="first">
+            <div class="col-md-12">
+              <form id="questions">
+                <label for="goal">What is your goal for this vacation?</label>
+                <select id="goal" class="form-control">
+                  <option disabled selected></option>
+                  <option value="rest">Resting</option>
+                  <option value="active">Staying Active</option>
+                </select>
+                <label for="activity">What is your idea of time well spent on vacation?</label>
+                <select id="activity" class="form-control">
+                  <option disabled selected></option>
+                  <option value="eat">Eating and Drinking</option>
+                  <option value="explore">Explore</option>
+                </select>
+                <label for="who">Would you travel with family or with friends?</label>
+                <select id="who" class="form-control">
+                  <option disabled selected></option>
+                  <option value="family">Family</option>
+                  <option value="friends">Friends</option>
+                </select>
+                <label for="climate">Would you travel with family or with friends?</label>
+                <select id="climate" class="form-control">
+                  <option disabled selected></option>
+                  <option value="warm">Warmer</option>
+                  <option value="cool">Cooler</option>
+                </select>
+                <label for="distance">Would you travel with family or with friends?</label>
+                <select id="distance" class="form-control">
+                  <option disabled selected></option>
+                  <option value="close">Close by</option>
+                  <option value="far">Far away</option>
+                </select>
+                <br>
                 <button type="submit" class="btn">Dream Vacation Result</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
-
-
-
-    <div class="container">
-      <span id="summary"></span>
-      <div class="col-md-9">
-        <div id="nola">
-          <h2>NOLA</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, urna sit amet interdum pharetra, orci ante aliquet justo, sed feugiat tellus purus non nulla. Morbi sodales leo in fermentum fringilla. Nam lacinia auctor est, eget pretium turpis vulputate vitae. Cras ultricies massa non tortor fermentum, sit amet blandit diam mattis. Donec mollis faucibus nunc vitae mollis. Donec congue nec felis quis luctus. Morbi ac consequat nisi. Aenean mattis eu quam ac sagittis. Cras mollis est et lacinia sollicitudin. Pellentesque auctor arcu vel nulla ornare iaculis. Integer molestie lectus sed orci gravida, non mollis leo hendrerit. Mauris vitae neque cursus, ornare nisi vel, pretium sapien. Mauris ut accumsan turpis, sit amet scelerisque mi.
-            Donec sit amet elit quam. Nulla sit amet massa id elit vehicula dictum vel id leo. Donec a ipsum nec lorem auctor egestas a in est. Etiam eget mauris blandit, gravida sapien dapibus, egestas risus. Aenean elementum cursus arcu vitae dictum. Duis consectetur ex quis lobortis laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec est erat, tristique non pellentesque id, hendrerit tincidunt turpis. Ut pulvinar vel metus vel ultrices. Integer eget molestie nisi, quis efficitur leo. Pellentesque posuere egestas suscipit. Integer a tellus vitae lectus molestie varius eget sit amet eros.
-            Sed tempus ultricies ex, eu posuere velit lobortis sed. Sed gravida, arcu in feugiat bibendum, turpis arcu posuere risus, ac facilisis erat nibh eget libero. Vivamus semper velit odio, ut vulputate eros malesuada sed. Nam id risus id quam pretium vestibulum at nec augue. Nullam lacus augue, ornare vitae nisl vitae, convallis elementum dolor. Duis euismod elementum tincidunt. Nulla sodales cursus dolor ut congue. Phasellus fermentum maximus malesuada. Maecenas ut rhoncus tellus. Nam eu faucibus elit.
-
-            Donec interdum, lectus sed mollis blandit, enim ante pretium neque, at ultrices ante justo vel nunc. Fusce tristique leo eget nisl lobortis, eu vulputate nibh efficitur. Nullam dolor elit, auctor a sollicitudin eget, faucibus quis libero. Nullam dui velit, ornare at feugiat sit amet, pellentesque non purus. Mauris tortor massa, auctor ac elit ac, tempus fringilla libero. Phasellus velit ipsum, interdum vitae ultricies ut, tincidunt id odio. Ut eget feugiat nibh, in sodales enim. Suspendisse a ullamcorper turpis. Nunc quis dui at lectus fringilla convallis vel eget est. Donec efficitur mi sit amet velit vehicula fermentum. Nunc laoreet lobortis arcu, quis facilisis lacus vestibulum eu. Sed gravida bibendum vulputate.
-          </p>
-        </div>
-        <div id="denver">
-          <h2>Denver, Colorado</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, urna sit amet interdum pharetra, orci ante aliquet justo, sed feugiat tellus purus non nulla. Morbi sodales leo in fermentum fringilla. Nam lacinia auctor est, eget pretium turpis vulputate vitae. Cras ultricies massa non tortor fermentum, sit amet blandit diam mattis. Donec mollis faucibus nunc vitae mollis. Donec congue nec felis quis luctus. Morbi ac consequat nisi. Aenean mattis eu quam ac sagittis. Cras mollis est et lacinia sollicitudin. Pellentesque auctor arcu vel nulla ornare iaculis. Integer molestie lectus sed orci gravida, non mollis leo hendrerit. Mauris vitae neque cursus, ornare nisi vel, pretium sapien. Mauris ut accumsan turpis, sit amet scelerisque mi.
-
-            Donec sit amet elit quam. Nulla sit amet massa id elit vehicula dictum vel id leo. Donec a ipsum nec lorem auctor egestas a in est. Etiam eget mauris blandit, gravida sapien dapibus, egestas risus. Aenean elementum cursus arcu vitae dictum. Duis consectetur ex quis lobortis laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec est erat, tristique non pellentesque id, hendrerit tincidunt turpis. Ut pulvinar vel metus vel ultrices. Integer eget molestie nisi, quis efficitur leo. Pellentesque posuere egestas suscipit. Integer a tellus vitae lectus molestie varius eget sit amet eros.
-
-            Sed tempus ultricies ex, eu posuere velit lobortis sed. Sed gravida, arcu in feugiat bibendum, turpis arcu posuere risus, ac facilisis erat nibh eget libero. Vivamus semper velit odio, ut vulputate eros malesuada sed. Nam id risus id quam pretium vestibulum at nec augue. Nullam lacus augue, ornare vitae nisl vitae, convallis elementum dolor. Duis euismod elementum tincidunt. Nulla sodales cursus dolor ut congue. Phasellus fermentum maximus malesuada. Maecenas ut rhoncus tellus. Nam eu faucibus elit.
-
-            Donec interdum, lectus sed mollis blandit, enim ante pretium neque, at ultrices ante justo vel nunc. Fusce tristique leo eget nisl lobortis, eu vulputate nibh efficitur. Nullam dolor elit, auctor a sollicitudin eget, faucibus quis libero. Nullam dui velit, ornare at feugiat sit amet, pellentesque non purus. Mauris tortor massa, auctor ac elit ac, tempus fringilla libero. Phasellus velit ipsum, interdum vitae ultricies ut, tincidunt id odio. Ut eget feugiat nibh, in sodales enim. Suspendisse a ullamcorper turpis. Nunc quis dui at lectus fringilla convallis vel eget est. Donec efficitur mi sit amet velit vehicula fermentum. Nunc laoreet lobortis arcu, quis facilisis lacus vestibulum eu. Sed gravida bibendum vulputate.
-          </p>
-        </div>
-        <div id="barcelona">
-          <h2>Barcelona, Spain</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, urna sit amet interdum pharetra, orci ante aliquet justo, sed feugiat tellus purus non nulla. Morbi sodales leo in fermentum fringilla. Nam lacinia auctor est, eget pretium turpis vulputate vitae. Cras ultricies massa non tortor fermentum, sit amet blandit diam mattis. Donec mollis faucibus nunc vitae mollis. Donec congue nec felis quis luctus. Morbi ac consequat nisi. Aenean mattis eu quam ac sagittis. Cras mollis est et lacinia sollicitudin. Pellentesque auctor arcu vel nulla ornare iaculis. Integer molestie lectus sed orci gravida, non mollis leo hendrerit. Mauris vitae neque cursus, ornare nisi vel, pretium sapien. Mauris ut accumsan turpis, sit amet scelerisque mi.
-
-            Donec sit amet elit quam. Nulla sit amet massa id elit vehicula dictum vel id leo. Donec a ipsum nec lorem auctor egestas a in est. Etiam eget mauris blandit, gravida sapien dapibus, egestas risus. Aenean elementum cursus arcu vitae dictum. Duis consectetur ex quis lobortis laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec est erat, tristique non pellentesque id, hendrerit tincidunt turpis. Ut pulvinar vel metus vel ultrices. Integer eget molestie nisi, quis efficitur leo. Pellentesque posuere egestas suscipit. Integer a tellus vitae lectus molestie varius eget sit amet eros.
-
-            Sed tempus ultricies ex, eu posuere velit lobortis sed. Sed gravida, arcu in feugiat bibendum, turpis arcu posuere risus, ac facilisis erat nibh eget libero. Vivamus semper velit odio, ut vulputate eros malesuada sed. Nam id risus id quam pretium vestibulum at nec augue. Nullam lacus augue, ornare vitae nisl vitae, convallis elementum dolor. Duis euismod elementum tincidunt. Nulla sodales cursus dolor ut congue. Phasellus fermentum maximus malesuada. Maecenas ut rhoncus tellus. Nam eu faucibus elit.
-
-            Donec interdum, lectus sed mollis blandit, enim ante pretium neque, at ultrices ante justo vel nunc. Fusce tristique leo eget nisl lobortis, eu vulputate nibh efficitur. Nullam dolor elit, auctor a sollicitudin eget, faucibus quis libero. Nullam dui velit, ornare at feugiat sit amet, pellentesque non purus. Mauris tortor massa, auctor ac elit ac, tempus fringilla libero. Phasellus velit ipsum, interdum vitae ultricies ut, tincidunt id odio. Ut eget feugiat nibh, in sodales enim. Suspendisse a ullamcorper turpis. Nunc quis dui at lectus fringilla convallis vel eget est. Donec efficitur mi sit amet velit vehicula fermentum. Nunc laoreet lobortis arcu, quis facilisis lacus vestibulum eu. Sed gravida bibendum vulputate.
-          </p>
-        <div id="copenhagen">
-          <h2>Copenhagen, Denmark</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, urna sit amet interdum pharetra, orci ante aliquet justo, sed feugiat tellus purus non nulla. Morbi sodales leo in fermentum fringilla. Nam lacinia auctor est, eget pretium turpis vulputate vitae. Cras ultricies massa non tortor fermentum, sit amet blandit diam mattis. Donec mollis faucibus nunc vitae mollis. Donec congue nec felis quis luctus. Morbi ac consequat nisi. Aenean mattis eu quam ac sagittis. Cras mollis est et lacinia sollicitudin. Pellentesque auctor arcu vel nulla ornare iaculis. Integer molestie lectus sed orci gravida, non mollis leo hendrerit. Mauris vitae neque cursus, ornare nisi vel, pretium sapien. Mauris ut accumsan turpis, sit amet scelerisque mi.
-
-            Donec sit amet elit quam. Nulla sit amet massa id elit vehicula dictum vel id leo. Donec a ipsum nec lorem auctor egestas a in est. Etiam eget mauris blandit, gravida sapien dapibus, egestas risus. Aenean elementum cursus arcu vitae dictum. Duis consectetur ex quis lobortis laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec est erat, tristique non pellentesque id, hendrerit tincidunt turpis. Ut pulvinar vel metus vel ultrices. Integer eget molestie nisi, quis efficitur leo. Pellentesque posuere egestas suscipit. Integer a tellus vitae lectus molestie varius eget sit amet eros.
-
-            Sed tempus ultricies ex, eu posuere velit lobortis sed. Sed gravida, arcu in feugiat bibendum, turpis arcu posuere risus, ac facilisis erat nibh eget libero. Vivamus semper velit odio, ut vulputate eros malesuada sed. Nam id risus id quam pretium vestibulum at nec augue. Nullam lacus augue, ornare vitae nisl vitae, convallis elementum dolor. Duis euismod elementum tincidunt. Nulla sodales cursus dolor ut congue. Phasellus fermentum maximus malesuada. Maecenas ut rhoncus tellus. Nam eu faucibus elit.
-
-            Donec interdum, lectus sed mollis blandit, enim ante pretium neque, at ultrices ante justo vel nunc. Fusce tristique leo eget nisl lobortis, eu vulputate nibh efficitur. Nullam dolor elit, auctor a sollicitudin eget, faucibus quis libero. Nullam dui velit, ornare at feugiat sit amet, pellentesque non purus. Mauris tortor massa, auctor ac elit ac, tempus fringilla libero. Phasellus velit ipsum, interdum vitae ultricies ut, tincidunt id odio. Ut eget feugiat nibh, in sodales enim. Suspendisse a ullamcorper turpis. Nunc quis dui at lectus fringilla convallis vel eget est. Donec efficitur mi sit amet velit vehicula fermentum. Nunc laoreet lobortis arcu, quis facilisis lacus vestibulum eu. Sed gravida bibendum vulputate.
-          </p>
-        </div>
-
-      </div>
     </div>
+//result
+      <div class="summary">
+        <div class="col-md-9">
+          <div id="nola">
+            <h2>NOLA</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, urna sit amet interdum pharetra, orci ante aliquet justo, sed feugiat tellus purus non nulla. Morbi sodales leo in fermentum fringilla. Nam lacinia auctor est, eget pretium turpis vulputate vitae. Cras ultricies massa non tortor fermentum, sit amet blandit diam mattis. Donec mollis faucibus nunc vitae mollis. Donec congue nec felis quis luctus. Morbi ac consequat nisi. Aenean mattis eu quam ac sagittis. Cras mollis est et lacinia sollicitudin. Pellentesque auctor arcu vel nulla ornare iaculis. Integer molestie lectus sed orci gravida, non mollis leo hendrerit. Mauris vitae neque cursus, ornare nisi vel, pretium sapien. Mauris ut accumsan turpis, sit amet scelerisque mi.
+              Donec sit amet elit quam. Nulla sit amet massa id elit vehicula dictum vel id leo. Donec a ipsum nec lorem auctor egestas a in est. Etiam eget mauris blandit, gravida sapien dapibus, egestas risus. Aenean elementum cursus arcu vitae dictum. Duis consectetur ex quis lobortis laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec est erat, tristique non pellentesque id, hendrerit tincidunt turpis. Ut pulvinar vel metus vel ultrices. Integer eget molestie nisi, quis efficitur leo. Pellentesque posuere egestas suscipit. Integer a tellus vitae lectus molestie varius eget sit amet eros.
+              Sed tempus ultricies ex, eu posuere velit lobortis sed. Sed gravida, arcu in feugiat bibendum, turpis arcu posuere risus, ac facilisis erat nibh eget libero. Vivamus semper velit odio, ut vulputate eros malesuada sed. Nam id risus id quam pretium vestibulum at nec augue. Nullam lacus augue, ornare vitae nisl vitae, convallis elementum dolor. Duis euismod elementum tincidunt. Nulla sodales cursus dolor ut congue. Phasellus fermentum maximus malesuada. Maecenas ut rhoncus tellus. Nam eu faucibus elit.
+
+              Donec interdum, lectus sed mollis blandit, enim ante pretium neque, at ultrices ante justo vel nunc. Fusce tristique leo eget nisl lobortis, eu vulputate nibh efficitur. Nullam dolor elit, auctor a sollicitudin eget, faucibus quis libero. Nullam dui velit, ornare at feugiat sit amet, pellentesque non purus. Mauris tortor massa, auctor ac elit ac, tempus fringilla libero. Phasellus velit ipsum, interdum vitae ultricies ut, tincidunt id odio. Ut eget feugiat nibh, in sodales enim. Suspendisse a ullamcorper turpis. Nunc quis dui at lectus fringilla convallis vel eget est. Donec efficitur mi sit amet velit vehicula fermentum. Nunc laoreet lobortis arcu, quis facilisis lacus vestibulum eu. Sed gravida bibendum vulputate.
+            </p>
+          </div>
+          <div id="denver">
+            <h2>Denver, Colorado</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, urna sit amet interdum pharetra, orci ante aliquet justo, sed feugiat tellus purus non nulla. Morbi sodales leo in fermentum fringilla. Nam lacinia auctor est, eget pretium turpis vulputate vitae. Cras ultricies massa non tortor fermentum, sit amet blandit diam mattis. Donec mollis faucibus nunc vitae mollis. Donec congue nec felis quis luctus. Morbi ac consequat nisi. Aenean mattis eu quam ac sagittis. Cras mollis est et lacinia sollicitudin. Pellentesque auctor arcu vel nulla ornare iaculis. Integer molestie lectus sed orci gravida, non mollis leo hendrerit. Mauris vitae neque cursus, ornare nisi vel, pretium sapien. Mauris ut accumsan turpis, sit amet scelerisque mi.
+
+              Donec sit amet elit quam. Nulla sit amet massa id elit vehicula dictum vel id leo. Donec a ipsum nec lorem auctor egestas a in est. Etiam eget mauris blandit, gravida sapien dapibus, egestas risus. Aenean elementum cursus arcu vitae dictum. Duis consectetur ex quis lobortis laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec est erat, tristique non pellentesque id, hendrerit tincidunt turpis. Ut pulvinar vel metus vel ultrices. Integer eget molestie nisi, quis efficitur leo. Pellentesque posuere egestas suscipit. Integer a tellus vitae lectus molestie varius eget sit amet eros.
+
+              Sed tempus ultricies ex, eu posuere velit lobortis sed. Sed gravida, arcu in feugiat bibendum, turpis arcu posuere risus, ac facilisis erat nibh eget libero. Vivamus semper velit odio, ut vulputate eros malesuada sed. Nam id risus id quam pretium vestibulum at nec augue. Nullam lacus augue, ornare vitae nisl vitae, convallis elementum dolor. Duis euismod elementum tincidunt. Nulla sodales cursus dolor ut congue. Phasellus fermentum maximus malesuada. Maecenas ut rhoncus tellus. Nam eu faucibus elit.
+
+              Donec interdum, lectus sed mollis blandit, enim ante pretium neque, at ultrices ante justo vel nunc. Fusce tristique leo eget nisl lobortis, eu vulputate nibh efficitur. Nullam dolor elit, auctor a sollicitudin eget, faucibus quis libero. Nullam dui velit, ornare at feugiat sit amet, pellentesque non purus. Mauris tortor massa, auctor ac elit ac, tempus fringilla libero. Phasellus velit ipsum, interdum vitae ultricies ut, tincidunt id odio. Ut eget feugiat nibh, in sodales enim. Suspendisse a ullamcorper turpis. Nunc quis dui at lectus fringilla convallis vel eget est. Donec efficitur mi sit amet velit vehicula fermentum. Nunc laoreet lobortis arcu, quis facilisis lacus vestibulum eu. Sed gravida bibendum vulputate.
+            </p>
+          </div>
+          <div id="barcelona">
+            <h2>Barcelona, Spain</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, urna sit amet interdum pharetra, orci ante aliquet justo, sed feugiat tellus purus non nulla. Morbi sodales leo in fermentum fringilla. Nam lacinia auctor est, eget pretium turpis vulputate vitae. Cras ultricies massa non tortor fermentum, sit amet blandit diam mattis. Donec mollis faucibus nunc vitae mollis. Donec congue nec felis quis luctus. Morbi ac consequat nisi. Aenean mattis eu quam ac sagittis. Cras mollis est et lacinia sollicitudin. Pellentesque auctor arcu vel nulla ornare iaculis. Integer molestie lectus sed orci gravida, non mollis leo hendrerit. Mauris vitae neque cursus, ornare nisi vel, pretium sapien. Mauris ut accumsan turpis, sit amet scelerisque mi.
+
+              Donec sit amet elit quam. Nulla sit amet massa id elit vehicula dictum vel id leo. Donec a ipsum nec lorem auctor egestas a in est. Etiam eget mauris blandit, gravida sapien dapibus, egestas risus. Aenean elementum cursus arcu vitae dictum. Duis consectetur ex quis lobortis laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec est erat, tristique non pellentesque id, hendrerit tincidunt turpis. Ut pulvinar vel metus vel ultrices. Integer eget molestie nisi, quis efficitur leo. Pellentesque posuere egestas suscipit. Integer a tellus vitae lectus molestie varius eget sit amet eros.
+
+              Sed tempus ultricies ex, eu posuere velit lobortis sed. Sed gravida, arcu in feugiat bibendum, turpis arcu posuere risus, ac facilisis erat nibh eget libero. Vivamus semper velit odio, ut vulputate eros malesuada sed. Nam id risus id quam pretium vestibulum at nec augue. Nullam lacus augue, ornare vitae nisl vitae, convallis elementum dolor. Duis euismod elementum tincidunt. Nulla sodales cursus dolor ut congue. Phasellus fermentum maximus malesuada. Maecenas ut rhoncus tellus. Nam eu faucibus elit.
+
+              Donec interdum, lectus sed mollis blandit, enim ante pretium neque, at ultrices ante justo vel nunc. Fusce tristique leo eget nisl lobortis, eu vulputate nibh efficitur. Nullam dolor elit, auctor a sollicitudin eget, faucibus quis libero. Nullam dui velit, ornare at feugiat sit amet, pellentesque non purus. Mauris tortor massa, auctor ac elit ac, tempus fringilla libero. Phasellus velit ipsum, interdum vitae ultricies ut, tincidunt id odio. Ut eget feugiat nibh, in sodales enim. Suspendisse a ullamcorper turpis. Nunc quis dui at lectus fringilla convallis vel eget est. Donec efficitur mi sit amet velit vehicula fermentum. Nunc laoreet lobortis arcu, quis facilisis lacus vestibulum eu. Sed gravida bibendum vulputate.
+            </p>
+          <div id="copenhagen">
+            <h2>Copenhagen, Denmark</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, urna sit amet interdum pharetra, orci ante aliquet justo, sed feugiat tellus purus non nulla. Morbi sodales leo in fermentum fringilla. Nam lacinia auctor est, eget pretium turpis vulputate vitae. Cras ultricies massa non tortor fermentum, sit amet blandit diam mattis. Donec mollis faucibus nunc vitae mollis. Donec congue nec felis quis luctus. Morbi ac consequat nisi. Aenean mattis eu quam ac sagittis. Cras mollis est et lacinia sollicitudin. Pellentesque auctor arcu vel nulla ornare iaculis. Integer molestie lectus sed orci gravida, non mollis leo hendrerit. Mauris vitae neque cursus, ornare nisi vel, pretium sapien. Mauris ut accumsan turpis, sit amet scelerisque mi.
+
+              Donec sit amet elit quam. Nulla sit amet massa id elit vehicula dictum vel id leo. Donec a ipsum nec lorem auctor egestas a in est. Etiam eget mauris blandit, gravida sapien dapibus, egestas risus. Aenean elementum cursus arcu vitae dictum. Duis consectetur ex quis lobortis laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec est erat, tristique non pellentesque id, hendrerit tincidunt turpis. Ut pulvinar vel metus vel ultrices. Integer eget molestie nisi, quis efficitur leo. Pellentesque posuere egestas suscipit. Integer a tellus vitae lectus molestie varius eget sit amet eros.
+
+              Sed tempus ultricies ex, eu posuere velit lobortis sed. Sed gravida, arcu in feugiat bibendum, turpis arcu posuere risus, ac facilisis erat nibh eget libero. Vivamus semper velit odio, ut vulputate eros malesuada sed. Nam id risus id quam pretium vestibulum at nec augue. Nullam lacus augue, ornare vitae nisl vitae, convallis elementum dolor. Duis euismod elementum tincidunt. Nulla sodales cursus dolor ut congue. Phasellus fermentum maximus malesuada. Maecenas ut rhoncus tellus. Nam eu faucibus elit.
+
+              Donec interdum, lectus sed mollis blandit, enim ante pretium neque, at ultrices ante justo vel nunc. Fusce tristique leo eget nisl lobortis, eu vulputate nibh efficitur. Nullam dolor elit, auctor a sollicitudin eget, faucibus quis libero. Nullam dui velit, ornare at feugiat sit amet, pellentesque non purus. Mauris tortor massa, auctor ac elit ac, tempus fringilla libero. Phasellus velit ipsum, interdum vitae ultricies ut, tincidunt id odio. Ut eget feugiat nibh, in sodales enim. Suspendisse a ullamcorper turpis. Nunc quis dui at lectus fringilla convallis vel eget est. Donec efficitur mi sit amet velit vehicula fermentum. Nunc laoreet lobortis arcu, quis facilisis lacus vestibulum eu. Sed gravida bibendum vulputate.
+            </p>
+          </div>
+        </div>
+      </div>
 
   </body>
 </html>
