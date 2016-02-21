@@ -6,13 +6,13 @@ $(document).ready(function() {
     var question4 = $("select#climate").val();
     var question5 = $("select#distance").val();
 
-    var result = [question5, question4, question3, question2, question1];
+    var result = (question5, question4, question3, question2, question1);
     if (result === "close" && "warm" || "friends" || "eat" ||"rest") {
-      $(".summary#nola").show();
+      $("#nola").show();
     } else if (result === "far" && "warm" || "friends" || "eat" || "rest") {
-      $(".summary#barcelona").show();
+      $("#barcelona").show();
     } else if (result  === "close" && "cool" || "family" || "explore" || "active") {
-      $(".summary#denver").show();
+      $("#denver").show();
     } else if (result  === "far" && "cool" || "family" || "explore" || "active") {
       $("#copenhagen").show();
     } else {
@@ -20,7 +20,7 @@ $(document).ready(function() {
     }
 
     $("#first").toggle();
-    $("#summary").toggle();
+    $(result).toggle();
 
 
     event.preventDefault();
