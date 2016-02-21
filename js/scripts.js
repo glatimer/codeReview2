@@ -7,16 +7,16 @@ $(document).ready(function() {
     var question5 = $("select#distance").val();
 
     var result = (question5, question4, question3, question2, question1);
-    if (result === "close" && "warm" || "friends" || "eat" ||"rest") {
+    if (result === "close" && "warm" && "friends" && "eat" && "rest") {
       $("#nola").show();
-    } else if (result === "far" && "warm" || "friends" || "eat" || "rest") {
+    } else if (result === "far" && "warm" && "friends" && "eat" && "rest") {
       $("#barcelona").show();
-    } else if (result  === "close" && "cool" || "family" || "explore" || "active") {
+    } else if (result  === "close" && "cool" && "family" && "explore" && "active") {
       $("#denver").show();
-    } else if (result  === "far" && "cool" || "family" || "explore" || "active") {
+    } else if (result  === "far" && "cool" && "family" && "explore" && "active") {
       $("#copenhagen").show();
     } else {
-      $(document).write("<h2>More information is needed to find out your personalized vacation!</h2>");
+      $("#summary").append("<strong><h2>More information is needed to find your dream vacation!</h2></strong>");
     }
 
     $("#first").toggle();
