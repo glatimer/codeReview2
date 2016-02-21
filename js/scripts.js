@@ -1,5 +1,4 @@
 $(document).ready(function() {
- - $("#questions").submit(function() {
  +  $("#questions form").submit(function(event) {
       var question1 = $("select#goal").val();
       var question2 = $("select#activity").val();
