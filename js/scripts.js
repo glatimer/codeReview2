@@ -1,32 +1,40 @@
 $(document).ready(function() {
 +  $("form#questions").submit(function(event) {
-    var question1 = $("select#goal").val();
-    var question2 = $("select#activity").val();
-    var question3 = $("select#who").val();
-    var question4 = $("select#climate").val();
-    var question5 = $("select#distance").val();
+    var goal = $("select#goal").val();
+    var activity = $("select#activity").val();
+    var who = $("select#who").val();
+    var climate = $("select#climate").val();
+    var distance = $("select#distance").val();
 
+    var climateDistance = [];
+    if (climate==="warm" && distance==="close") {
+      climateDistance = ("nola");
+    } else if (climate==="warm" && distance==="far") {
+      climateDistance = ("barcelona");
+    } else if (climate==="cool" && distance==="close") {
+      climateDistance = ("denver");
+    } else if (climate==="warm" && distance==="far") {
+      climateDistance = ("copenhagen");
+    }
 
-
-    var climateDistance = (question4, question5);
-    var result = [];
-    if (climateDistance === "warm" && "close") {
-      result = ["#nola"];
-    } else if (climateDistance === "warm" && "far") {
-      result = ["#barcelona"];
-    } else if (climateDistance === "cool" && "close") {
-      result = ["#denver"];
-    } else if (climateDistance === "cool" && "far") {
-      result = ["#copenhagen"];
+    var suggestion = []
+    if (climate==="warm" && distance==="close", activity==="eat" || who==="friends") {
+      suggestion = ("#nola");
+    } else if (climate==="warm" && distance==="far", goal==="active" || activity==="explore") {
+      suggestion = ("#barcelona");
+    } else if (climate==="cool" && distance==="close", goal==="active" || who==="family") {
+      suggestion = ("#denver");
+    } else if (climate==="cool" && distance==="far", activity==="explore" || who==="family") {
+      suggestion = ("#copenhagen");
     } else {
-      $("#summary").append("<strong><h2>More information is needed to find your dream vacation!</h2></strong>");
+      $("span#suggestion").append("<strong><h2>More information is needed to find your dream vacation!</h2></strong>");
     }
 
 
 
 
     $("#first").toggle();
-    $(result).toggle();
+    $(suggestion).toggle();
 
 
     event.preventDefault();
