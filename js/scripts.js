@@ -7,20 +7,17 @@ $(document).ready(function() {
     var distance = $("select#distance").val();
 
     var suggestion = []
-    if (climate==="warm" && distance==="close" && activity==="eat") {
+    if (climate==="warm" && distance==="close") {
       suggestion = ("#nola");
-    } else if (climate==="warm" && distance==="far" && activity==="explore") {
+    } else if (climate==="warm" && distance==="far") {
       suggestion = ("#barcelona");
-    } else if (climate==="cool" && distance==="close" && who==="family") {
+    } else if (climate==="cool" && distance==="close") {
       suggestion = ("#denver");
-    } else if (climate==="cool" && distance==="far" && goal==="active") {
+    } else if (climate==="cool" && distance==="far") {
       suggestion = ("#copenhagen");
     } else {
       $("span#suggestion").append("<strong><h2>More information is needed to find your dream vacation!</h2></strong>");
     }
-
-
-
 
     $("#first").toggle();
     $(suggestion).toggle();
