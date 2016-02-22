@@ -13,7 +13,8 @@ $(document).ready(function() {
     } else if (climate==="cool" && distance==="far") {
       suggestion = ("#copenhagen");
     } else {
-      $("span#suggestion").append("<strong><h2>More information is needed to find your dream vacation!</h2></strong>");
+      alert("More information is needed to find your dream vacation!")
+      location.reload();
     }
 
     var name = $("input#name").val();
@@ -30,7 +31,7 @@ $(document).ready(function() {
 
     $("#first").toggle();
     $(suggestion).toggle();
-    $(".summary").show();
+    $("#summary").show();
 
 
 
