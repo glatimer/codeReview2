@@ -17,6 +17,7 @@ $(document).ready(function() {
       location.reload();
     }
 
+
     var name = $("input#name").val();
     var goal = $("select#goal").val();
     var activity = $("select#activity").val();
@@ -32,6 +33,7 @@ $(document).ready(function() {
     $("#first").toggle();
     $(suggestion).toggle();
     $("#summary").show();
+
 
 
 
