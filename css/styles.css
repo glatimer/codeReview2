@@ -19,6 +19,18 @@ text-align: center;
 text-align: center;
 }
 
-#nola, #denver, #barcelona, #copenhagen {
+#nola {
+  display: none;
+}
+
+#denver {
+  display: none;
+}
+
+#barcelona {
+  display: none;
+}
+
+#copenhagen {
   display: none;
 }
