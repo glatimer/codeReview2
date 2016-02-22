@@ -2,7 +2,7 @@ body {
   background-color: #ab9696;
 }
 
-.jumbotron {
+#first .jumbotron {
   position: relative;
   background: black url("../img/stone-beach.jpg") center center;
   width: 100%;
@@ -19,18 +19,68 @@ text-align: center;
 text-align: center;
 }
 
+.summary {
+  display: none;
+}
+
+.summary p {
+  text-align: center;
+}
+#first h1 {
+  text-align: center;
+}
+
 #nola {
   display: none;
 }
 
+#nola .jumbotron {
+  position: relative;
+  background: black url("../img/nola-photo.jpg.png") center center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.0);
+}
+
 #denver {
   display: none;
+}
+#denver .jumbotron {
+  position: relative;
+  background: black url("../img/nola-photo.jpg.png") center center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.0);
 }
 
 #barcelona {
   display: none;
 }
 
+#barcelona .jumbotron {
+  position: relative;
+  background: black url("../img/nola-photo.jpg.png") center center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.0);
+}
+
 #copenhagen {
   display: none;
+}
+
+#copenhagen .jumbotron {
+  position: relative;
+  background: black url("../img/nola-photo.jpg.png") center center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.0);
 }

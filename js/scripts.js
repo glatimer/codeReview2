@@ -1,8 +1,5 @@
 $(document).ready(function() {
 +  $("form#questions").submit(function(event) {
-    var goal = $("select#goal").val();
-    var activity = $("select#activity").val();
-    var who = $("select#who").val();
     var climate = $("select#climate").val();
     var distance = $("select#distance").val();
 
@@ -19,8 +16,22 @@ $(document).ready(function() {
       $("span#suggestion").append("<strong><h2>More information is needed to find your dream vacation!</h2></strong>");
     }
 
+    var name = $("input#name").val();
+    var goal = $("select#goal").val();
+    var activity = $("select#activity").val();
+    var who = $("select#who").val();
+
+    $("span#name").append(name);
+    $("span#goal").append(goal);
+    $("span#activity").append(activity);
+    $("span#who").append(who);
+
+
+
     $("#first").toggle();
     $(suggestion).toggle();
+    $(".summary").show();
+
 
 
     event.preventDefault();
