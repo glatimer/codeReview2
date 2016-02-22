@@ -11,7 +11,7 @@ _Answer the questions on the landing page and click the "Dream Vacation Result" 
 ## Setup/Installation Requirements
 
 * _Go to the github link for this repository called codeReview2._
-* _ https://github.com/glatimer/codeReview2.git _
+* https://github.com/glatimer/codeReview2.git
 * _Copy repository link_
 * _In your console use the command "git clone" and paste the link._
 
