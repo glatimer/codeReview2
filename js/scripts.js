@@ -6,25 +6,14 @@ $(document).ready(function() {
     var climate = $("select#climate").val();
     var distance = $("select#distance").val();
 
-    var climateDistance = [];
-    if (climate==="warm" && distance==="close") {
-      climateDistance = ("nola");
-    } else if (climate==="warm" && distance==="far") {
-      climateDistance = ("barcelona");
-    } else if (climate==="cool" && distance==="close") {
-      climateDistance = ("denver");
-    } else if (climate==="warm" && distance==="far") {
-      climateDistance = ("copenhagen");
-    }
-
     var suggestion = []
-    if (climate==="warm" && distance==="close", activity==="eat" || who==="friends") {
+    if (climate==="warm" && distance==="close" && activity==="eat") {
       suggestion = ("#nola");
-    } else if (climate==="warm" && distance==="far", goal==="active" || activity==="explore") {
+    } else if (climate==="warm" && distance==="far" && activity==="explore") {
       suggestion = ("#barcelona");
-    } else if (climate==="cool" && distance==="close", goal==="active" || who==="family") {
+    } else if (climate==="cool" && distance==="close" && who==="family") {
       suggestion = ("#denver");
-    } else if (climate==="cool" && distance==="far", activity==="explore" || who==="family") {
+    } else if (climate==="cool" && distance==="far" && goal==="active") {
       suggestion = ("#copenhagen");
     } else {
       $("span#suggestion").append("<strong><h2>More information is needed to find your dream vacation!</h2></strong>");
