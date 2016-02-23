@@ -6,17 +6,20 @@ $(document).ready(function() {
     var suggestion = []
     if (climate==="warm" && distance==="close") {
       suggestion = ("#nola");
+      $("#summary").show();
     } else if (climate==="warm" && distance==="far") {
       suggestion = ("#barcelona");
+      $("#summary").show();
     } else if (climate==="cool" && distance==="close") {
       suggestion = ("#denver");
+      $("#summary").show();
     } else if (climate==="cool" && distance==="far") {
       suggestion = ("#copenhagen");
+      $("#summary").show();
     } else {
       alert("More information is needed to find your dream vacation!")
       location.reload();
     }
-
 
     var name = $("input#name").val();
     var goal = $("select#goal").val();
@@ -32,11 +35,10 @@ $(document).ready(function() {
 
     $("#first").toggle();
     $(suggestion).toggle();
-    $("#summary").show();
-
 
 
 
     event.preventDefault();
+
   });
 });
